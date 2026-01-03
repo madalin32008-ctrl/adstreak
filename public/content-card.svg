@@ -1,0 +1,45 @@
+<svg width="345" height="240" viewBox="0 0 345 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0" y1="0" x2="345" y2="240" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#1E293B" />
+    </linearGradient>
+    <linearGradient id="fireGradient" x1="172.5" y1="240" x2="172.5" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FB923C" />
+      <stop offset="50%" stop-color="#EF4444" />
+      <stop offset="100%" stop-color="#FCD34D" />
+    </linearGradient>
+    <linearGradient id="textGradient" x1="0" y1="0" x2="345" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#94A3B8" />
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="15" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="345" height="240" fill="url(#bgGradient)" />
+
+  <!-- Abstract Fire/Streak Background Element (Right Side) -->
+  <path d="M250 240 C300 150 345 100 345 0 L345 240 Z" fill="url(#fireGradient)" opacity="0.3" filter="url(#glow)" />
+  <circle cx="300" cy="50" r="80" fill="#3B82F6" opacity="0.1" filter="url(#glow)" />
+
+  <!-- Logo/Icon Element (Small, top left or incorporated) -->
+  <!-- Let's put a stylized orb on the left -->
+  <circle cx="60" cy="60" r="30" fill="none" stroke="url(#fireGradient)" stroke-width="4" opacity="0.8" />
+  <circle cx="60" cy="60" r="15" fill="#3B82F6" filter="url(#glow)" />
+
+  <!-- Text -->
+  <text x="50%" y="110" text-anchor="middle" font-family="sans-serif" font-weight="900" font-size="42" fill="white" style="text-shadow: 0px 4px 10px rgba(0,0,0,0.5);">AdStreak</text>
+  <text x="50%" y="150" text-anchor="middle" font-family="sans-serif" font-weight="bold" font-size="16" fill="#94A3B8" letter-spacing="2">WATCH. EARN. REPEAT.</text>
+
+  <!-- CTA Button-ish visual -->
+  <rect x="112" y="180" width="120" height="30" rx="15" fill="#3B82F6" opacity="0.9" />
+  <text x="172.5" y="200" text-anchor="middle" font-family="sans-serif" font-weight="bold" font-size="12" fill="white">START NOW</text>
+
+</svg>
